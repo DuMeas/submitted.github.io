@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Meas Doeur Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Style.css">
+  <!-- <link rel="stylesheet" href="/Hotel Booking/Style(T2).css"> -->
+
+  <script src="/Hotel Booking/js/jquery.countdown.js"></script>
+  <script src="/Hotel Booking/js/jquery.countdown.min.js"></script>
+
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+<body>
+
+    <section class="book">
+        <div class="container flex_space">
+          <div class="text">
+            <h1> <span>Book</span>Your Rooms</h1>
+          </div>
+          <div class="form">
+            <form class="grid">
+              <input type="date" placeholder="Araival Date">
+              <input type="date" placeholder="Departure Date">
+              <input type="number" placeholder="Room">
+              <input type="number" placeholder="Poeple">
+              
+              <!-- <input type="submit" value="CHECK AVAILABILITY"> -->
+            </form>
+            <div class="container">
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                <div class="popup" id="popup">
+                    <img src="/image/tick.jpg" alt="" width="80px">
+                    <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted.Thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    <label><audio> </audio></label> 
+      
+      </section>
+
+    <!-- <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="/image/tick.jpg" alt="" width="80px">
+            <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted.Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div> -->
+    
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+
+</body>
+</html>
